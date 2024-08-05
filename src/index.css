@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.btn_subscribe {
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn_subscribe svg {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  /* display: none */
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-30px);
+}
+
+.btn_subscribe span {
+  transition: all 0.4s ease-in-out;
+}
+
+.btn_subscribe:hover {
+  background-position: 102% 0;
+}
+
+.btn_subscribe:hover svg {
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
+  transform: translateX(5px);
+}
+
+.btn_subscribe:hover span {
+  transform: translateX(10px);
+}
+
+.font-bevietnam {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.roadmap {
+  height: 1000px !important;
+}
+
+.course {
+  scale: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.course:hover {
+  scale: 1.02;
+}
+
+.subcribe_btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.subcribe_btn a {
+  z-index: 1;
+}
+
+.subcribe_btn::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background-color: #00adef;
+  left: 0;
+  top: 0;
+  width: 50px;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  z-index: -1;
+}
+
+.xasd {
+  transition: all 0.2s ease-in-out;
+}
+
+.subcribe_btn:hover {
+  cursor: pointer;
+}
+
+.subcribe_btn:hover .xasd {
+  color: white;
+}
+
+.subcribe_btn:hover::after {
+  width: 100%;
+}
+
+.why {
+  transition: all 0.2s ease-in-out;
+  scale: 1;
+}
+
+.why:hover {
+  cursor: pointer;
+  scale: 1.05;
+  box-shadow: 0px 20px 70px 0px rgba(0, 0, 0, 0.1);
+}
